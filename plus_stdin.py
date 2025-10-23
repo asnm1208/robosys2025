@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2025 asnm1208 <otomo6475@gmail.com>
+# SPDX-License-Identifier: GPL-3.0-only
 
 import sys
 
