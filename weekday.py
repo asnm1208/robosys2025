@@ -41,7 +41,7 @@ def process_line(line: str):
 
     parts = line.split()
     if len(parts) < 3:
-        print(f"ERROR: 入力は 'YYYY M D' の形式で指定してください: '{line}'")
+        print(f"ERROR: 入力は 'YYYY M D' の形式で指定してください: '{line}'", file=sys.stderr)
         sys.exit(1)
 
     try:
