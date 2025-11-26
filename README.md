@@ -1,7 +1,7 @@
-# weekday
-## robosys2025
+# robosys2025
 本リポジトリは千葉工業大学 未来ロボティクス学科 2025年度 ロボットシステム学内で行った内容に基づいて作成された練習用リポジトリです。
 
+# weekday
 ## weekday 概要
 Zellerの公式を用いて、入力された日付の曜日を判定するコマンドです。  
 ![CI](https://github.com/asnm1208/robosys2025/actions/workflows/test.yml/badge.svg)
@@ -11,15 +11,15 @@ OS: Ubuntu 24.04.3 LTS / Windows 11
 python-version: 3.7 ~ 3.12  
 確認環境: Ubuntu 24.04.3 LTS + GitHub Actions (CI)
 
-## インストール・実行方法
-下記のコマンドを使用し、クローン・実行を行ってください。  
+## インストール方法
+下記のコマンドを使用し、クローンを行ってください。  
 
 ```shell
 $ git clone https://github.com/asnm1208/robosys2025.git
 $ cd robosys2025
-$ chmod +x weekday.py
-$ echo "2025 1 1" | ./weekday.py
 ```
+
+## 
 
 ## 著作権・ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
