@@ -1,6 +1,7 @@
 # robosys2025
 本リポジトリは千葉工業大学 未来ロボティクス学科 2025年度 ロボットシステム学内で行った内容に基づいて作成された練習用リポジトリです。
 
+[README](https://github.com/asnm1208/robosys2025/blob/main/README.md)は、[akajaika](https://github.com/akajaika)の[robosys2024](https://github.com/akajaika/robosys2024/blob/main/README.md)(© 2024 Kai Nonaka)を参考に作られています。
 # weekday
 ## 概要
 Zellerの公式を用いて、入力された日付の曜日を判定するコマンドです。  
@@ -20,7 +21,7 @@ $ cd robosys2025
 ```
 
 ## 使い方
-標準入力から以下の形式で日付を与えます
+標準入力から以下の形式で日付を与えます。
 
 ```
 MMMM YY DD
@@ -33,7 +34,7 @@ $ echo "2025 1 1" | ./weekday.py
  Wednesday
 ```
 
-複数行にも対応しています
+複数行にも対応しています。
 
 ```shell
 $ printf "2025 1 1\n2024 2 29\n" | ./weekday.py
@@ -42,21 +43,21 @@ $ printf "2025 1 1\n2024 2 29\n" | ./weekday.py
 ```
 
 ## 入力仕様
-年: 1 以上の整数  
-月: 1〜12  
-日: 各月の暦に従う（閏年判定あり）  
+- 年: 1 以上の整数  
+- 月: 1〜12  
+- 日: 各月の暦に従う（閏年判定あり）  
 
-不正な日付は以下のように出力されます    
+不正な日付は以下のように出力されます。    
 
-範囲外の日付    : `invalid date`  
-フォーマット不正: なし  
-入力なし        : Usage表示
+- 範囲外の日付    : `invalid date`  
+- フォーマット不正: なし  
+- 入力なし        : Usage表示
 
 ## 著作権・ライセンス
-- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
-- このパッケージは，ryuichiueda/emcl由来のコード（© 2025 Ryuichi Ueda）を利用しています．
-- このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi
-  Ueda）のものを，本人の許可を得て自身の著作としたものです．
+- このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
+- このパッケージは、ryuichiueda/emcl由来のコード（© 2025 Ryuichi Ueda）を利用しています。
+- このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi
+  Ueda）のものを、本人の許可を得て自身の著作としたものです。
     - [ryuichiueda/my_slides
       robosys_2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
 - © 2025 Ryuichi Ueda
