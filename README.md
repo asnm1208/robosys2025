@@ -55,9 +55,5 @@ $ printf "2025 1 1\n2024 2 29\n" | ./weekday.py
 
 ## 著作権・ライセンス
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
-- このパッケージは、ryuichiueda/emcl由来のコード（© 2025 Ryuichi Ueda）を利用しています。
-- このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi
-  Ueda）のものを、本人の許可を得て自身の著作としたものです。
-    - [ryuichiueda/my_slides
-      robosys_2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
-- © 2025 Ryuichi Ueda
+- [README](https://github.com/asnm1208/robosys2025/blob/main/README.md)は、[akajaika](https://github.com/akajaika)の[robosys2024](https://github.com/akajaika/robosys2024/blob/main/README.md)(© 2024 Kai Nonaka)を参考に作られています。
+- © 2025 asnm1208
