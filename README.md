@@ -1,8 +1,12 @@
-# robosys2025
-ロボットシステム学課題１
+# weekday
+## robosys2025
+本リポジトリは千葉工業大学 未来ロボティクス学科 2025年度 ロボットシステム学内で行った内容に基づいて作成された練習用リポジトリです。
 
+## weekday 概要
+Zellerの公式を用いて、入力された日付の曜日を判定するコマンドです。
+[![test](https://github.com/asnm1208/robosys2025/blob/main/.github/workflows/test.yml/badge.svg)](https://github.com/asnm1208/robosys2025/blob/main/.github/workflows/test.yml)
 
-
+## 著作権・ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，ryuichiueda/emcl由来のコード（© 2025 Ryuichi Ueda）を利用しています．
 - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi
