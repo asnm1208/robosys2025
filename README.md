@@ -4,7 +4,7 @@
 
 ## weekday 概要
 Zellerの公式を用いて、入力された日付の曜日を判定するコマンドです。
-[![test](https://github.com/asnm1208/robosys2025/blob/main/.github/workflows/test.yml/badge.svg)](https://github.com/asnm1208/robosys2025/blob/main/.github/workflows/test.yml)
+[![CI](https://github.com/asnm1208/robosys2025/blob/main/.github/workflows/test.yml/badge.svg)](https://github.com/asnm1208/robosys2025/blob/main/.github/workflows/test.yml)
 
 ## 著作権・ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
