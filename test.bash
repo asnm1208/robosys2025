@@ -25,3 +25,41 @@ out=$(echo  | ./plus.py)
 
 [ "${res}" = 0 ] && echo OK
 exit $res
+
+
+### weekday.py test ###
+
+### NORMAL INPUT ###
+out=$(echo "2025 1 1" | ./weekday.py)
+expected=" Wednesday"
+[ "$out" = "$expected" ] || ng "$LINENO"
+
+
+### MULTIPLE INPUT ###
+out=$(printf "2025 1 1\n2024 2 29\n" | ./weekday.py)
+expected=$' Wednesday\n Thursday'
+[ "$out" = "$expected" ] || ng "$LINENO"
+
+
+### INVALID INPUT ###
+out=$(echo "2025 2 29" | ./weekday.py)
+expected="invalid date"
+[ "$out" = "$expected" ] || ng "$LINENO"
+
+
+### FORMAT ERROR ###
+out=$(echo "abc def" | ./weekday.py 2>/dev/null)
+ret=$?
+[ "$ret" = 1 ]      || ng "$LINENO"
+[ "$out" = "" ]     || ng "$LINENO"
+
+
+### EMPTY INPUT ###
+out=$(echo "" | ./weekday.py)
+ret=$?
+[ "$ret" = 0 ]       || ng "$LINENO"
+[ "$out" != "" ]     || ng "$LINENO"
+
+
+[ "$res" = 0 ] && echo "OK"
+exit $res
