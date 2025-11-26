@@ -53,6 +53,6 @@ $ printf "2025 1 1\n2024 2 29\n" | ./weekday.py
 - 入力なし        : Usage表示
 
 ## 著作権・ライセンス
-- このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
+- このソフトウェアパッケージは、GNU General Public License v3.0（GPL-3.0-only）の下、再頒布および使用が許可されています。
 - [README](https://github.com/asnm1208/robosys2025/blob/main/README.md)は、[akajaika](https://github.com/akajaika)の[robosys2024](https://github.com/akajaika/robosys2024/blob/main/README.md)(© 2024 Kai Nonaka)を参考に作られています。
 - © 2025 asnm1208
