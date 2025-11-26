@@ -1,7 +1,6 @@
 # robosys2025
 本リポジトリは千葉工業大学 未来ロボティクス学科 2025年度 ロボットシステム学内で行った内容に基づいて作成された練習用リポジトリです。
 
-[README](https://github.com/asnm1208/robosys2025/blob/main/README.md)は、[akajaika](https://github.com/akajaika)の[robosys2024](https://github.com/akajaika/robosys2024/blob/main/README.md)(© 2024 Kai Nonaka)を参考に作られています。
 # weekday
 ## 概要
 Zellerの公式を用いて、入力された日付の曜日を判定するコマンドです。  
