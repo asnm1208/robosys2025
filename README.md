@@ -7,9 +7,9 @@ Zellerの公式を用いて、入力された日付の曜日を判定するコ�
 ![CI](https://github.com/asnm1208/robosys2025/actions/workflows/test.yml/badge.svg)
 
 ## テスト環境
-OS: Ubuntu 24.04.3 LTS / Windows 11  
+OS            : Ubuntu 24.04.3 LTS / Windows 11  
 python-version: 3.7 ~ 3.12  
-確認環境: Ubuntu 24.04.3 LTS + GitHub Actions (CI)
+確認環境      : Ubuntu 24.04.3 LTS + GitHub Actions (CI)
 
 ## インストール方法
 下記のコマンドを使用し、クローンを行ってください。  
@@ -40,6 +40,17 @@ $ printf "2025 1 1\n2024 2 29\n" | ./weekday.py
  Wednesday
  Thursday
 ```
+
+## 入力仕様
+年: 1 以上の整数  
+月: 1〜12  
+日: 各月の暦に従う（閏年判定あり）  
+
+不正な日付は以下のように出力されます  
+
+範囲外の日付    : `invalid date`
+フォーマット不正: なし
+入力なし        : Usage表示
 
 ## 著作権・ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
