@@ -1,6 +1,6 @@
 #!/bin/bash -xv
 # SPDX-FileCopyrightText: 2025 asnm1208 <otomo6475@gmail.com>
-# SPDX-License-Identifier: GPL-3.0-oly
+# SPDX-License-Identifier: GPL-3.0-only
 
 ng () {
         echo ${1}行目が違うよ
