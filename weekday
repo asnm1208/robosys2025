@@ -62,17 +62,19 @@ def process_line(line: str):
 
 
 def main():
-    data = sys.stdin.read().strip().splitlines()
-    if not data:
-        print("Usage: 標準入力から 'YYYY M D' を1行に1件で与えてください。複数行でも可。")
-        print("例:\n2025 1 1\n2100 2 29\n(EOFで実行)")
-        return 0
+    data = sys.stdin
 
+    empty = True
     for line in data:
+        empty = False
         process_line(line)
 
-    return 0
+    if empty:
+        print("Usage: 標準入力から 'YYYY M D' を1行に1件で与えてください。複数行でも可。", file=sys.stderr)
+        print("例:\n2025 1 1\n2100 2 29\n(EOFで実行)", file=sys.stderr)
+        return 0
 
+    return 0
 
 if __name__ == "__main__":
     sys.exit(main())
