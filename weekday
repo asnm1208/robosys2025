@@ -58,7 +58,7 @@ def process_line(line: str):
 
     h = zeller_weekday(y, m, d)
     weekday_en = WEEK_NAMES[h]
-    print(f" {weekday_en}")
+    print(f"{weekday_en}")
 
     return True
 
@@ -86,7 +86,7 @@ def main():
     if not any_valid_line:
         print("Usage: 標準入力から 'YYYY M D' を1行に1件で与えてください。", file=sys.stderr)
         print("例: 2025 1 1", file=sys.stderr)
-        print("invalid input")
+        print("invalid input", file=sys.stderr)
         return 1
 
     return 0
