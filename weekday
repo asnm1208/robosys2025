@@ -60,22 +60,37 @@ def process_line(line: str):
     weekday_en = WEEK_NAMES[h]
     print(f" {weekday_en}")
 
+    return True
+
 
 def main():
     data = sys.stdin
+    any_valid_line = False
+    got_any_input = False
 
-    empty = True
     for line in data:
-        empty = False
-        process_line(line)
+        got_any_input = True
 
-    if empty:
-        print("Usage: 標準入力から 'YYYY M D' を1行に1件で与えてください。複数行でも可。", file=sys.stderr)
-        print("例:\n2025 1 1\n2100 2 29\n(EOFで実行)", file=sys.stderr)
-        return 0
+        if line.strip() == "":
+            # 空行は禁止 → Usage 表示
+            print("Usage: 標準入力から 'YYYY M D' を1行に1件で与えてください。", file=sys.stderr)
+            print("例: 2025 1 1", file=sys.stderr)
+            print("invalid input")
+            return 1
+
+        ok = process_line(line)
+        if ok:
+            any_valid_line = True
+
+    # EOF時に1件も有効行がなかった場合も Usage
+    if not any_valid_line:
+        print("Usage: 標準入力から 'YYYY M D' を1行に1件で与えてください。", file=sys.stderr)
+        print("例: 2025 1 1", file=sys.stderr)
+        print("invalid input")
+        return 1
 
     return 0
 
+
 if __name__ == "__main__":
     sys.exit(main())
-
