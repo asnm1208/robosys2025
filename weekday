@@ -53,7 +53,7 @@ def process_line(line: str):
         sys.exit(1)
 
     if not is_valid_date(y, m, d):
-        print("invalid date")
+        print("invalid date", file=sys.stderr)
         sys.exit(1)
 
     h = zeller_weekday(y, m, d)

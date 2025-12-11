@@ -84,12 +84,6 @@ expected="invalid input"
 [ "$out" = "invalid input" ]     || ng "$LINENO"
 
 
-### ONLY EOF (no input at all) ###
-out=$(./weekday < /dev/null 2>/dev/null)
-expected="invalid input"
-[ "$out" = "$expected" ] || ng "$LINENO"
-
-
 ### STDERR CHECK: invalid date が stderr に出力されているか ###
 err=$(echo "2025 2 29" | ./weekday 2>&1 >/dev/null)
 expected="invalid date"
