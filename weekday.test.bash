@@ -30,7 +30,7 @@ ret=$?
 ### EMPTY INPUT ###
 out=$(echo "" | ./weekday)
 expected="invalid input"
-[ "$out" != "invalid input" ]     || ng "$LINENO"
+[ "$out" = "invalid input" ]     || ng "$LINENO"
 
 
 [ "$res" = 0 ] && echo "OK"
