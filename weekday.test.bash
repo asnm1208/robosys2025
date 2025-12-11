@@ -85,8 +85,8 @@ expected="invalid input"
 
 
 ### STDERR CHECK: invalid date が stderr に出力されているか ###
-err=$(echo "2025 2 29" | ./weekday 2>&1 >/dev/null)
-expected="invalid date"
+err=$(echo "2025 24 29" | ./weekday 2>&1 >/dev/null)
+expected="入力は 'YYYY M D' の形式で指定してください"
 [ "$err" = "$expected" ] || ng "$LINENO"
 
 
