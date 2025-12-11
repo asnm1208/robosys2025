@@ -44,8 +44,8 @@ $ echo "2025 1 1" | ./weekday
 - 入力なし        : `invalid input`
 
 ## テスト環境
-OS            : Ubuntu 24.04.3 LTS / Windows 11
-python-version: 3.7 ~ 3.12
+OS            : Ubuntu 24.04.3 LTS / Windows 11  
+python-version: 3.7 ~ 3.12  
 確認環境      : Ubuntu 24.04.3 LTS + GitHub Actions (CI)
 
 ## 著作権・ライセンス
