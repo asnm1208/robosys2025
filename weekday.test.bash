@@ -11,7 +11,7 @@ res=0
 
 ### NORMAL INPUT ###
 out=$(echo "2025 1 1" | ./weekday)
-expected=" Wednesday"
+expected="Wednesday"
 [ "$out" = "$expected" ] || ng "$LINENO"
 
 ### INVALID INPUT ###
