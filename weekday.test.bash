@@ -30,7 +30,7 @@ ret=$?
 ### EMPTY INPUT ###
 out=$(echo "" | ./weekday)
 ret=$?
-[ "$ret" = 0 ]       || ng "$LINENO"
+[ "$ret" = 1 ]       || ng "$LINENO"
 [ "$out" != "" ]     || ng "$LINENO"
 
 
