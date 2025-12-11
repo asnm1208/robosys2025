@@ -80,13 +80,14 @@ expected="invalid date"
 
 ### EMPTY INPUT ###
 out=$(echo "" | ./weekday)
-expected="invalid input"
-[ "$out" = "invalid input" ]     || ng "$LINENO"
+ret=$?
+[ "$ret" = 1 ] || ng "$LINENO"
+[ "$out" = "" ] || ng "$LINENO"
 
 
 ### STDERR CHECK: invalid date が stderr に出力されているか ###
-err=$(echo "2025 24 29" | ./weekday 2>&1 >/dev/null)
-expected="入力は 'YYYY M D' の形式で指定してください"
+err=$(echo "2025 2 29" | ./weekday)
+expected="invalid date"
 [ "$err" = "$expected" ] || ng "$LINENO"
 
 

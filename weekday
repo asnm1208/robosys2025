@@ -75,7 +75,6 @@ def main():
             # 空行は禁止 → Usage 表示
             print("Usage: 標準入力から 'YYYY M D' を1行に1件で与えてください。", file=sys.stderr)
             print("例: 2025 1 1", file=sys.stderr)
-            print("invalid input")
             return 1
 
         ok = process_line(line)
