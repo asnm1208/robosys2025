@@ -6,10 +6,9 @@
 Zellerの公式を用いて、入力された日付の曜日を判定するコマンドです。  
 ![CI](https://github.com/asnm1208/robosys2025/actions/workflows/test.yml/badge.svg)
 
-## テスト環境
+## 推奨環境
 OS            : Ubuntu 24.04.3 LTS / Windows 11  
-python-version: 3.7 ~ 3.12  
-確認環境      : Ubuntu 24.04.3 LTS + GitHub Actions (CI)
+python-version: 3.12
 
 ## インストール方法
 下記のコマンドを使用し、クローンを行ってください。  
@@ -25,21 +24,12 @@ $ cd robosys2025
 ```
 MMMM YY DD
 ```
-入力後、Ctrl + D で実行します。
 
 実行例
 
 ```shell
-$ echo "2025 1 1" | ./weekday.py
+$ echo "2025 1 1" | ./weekday
  Wednesday
-```
-
-複数行にも対応しています。
-
-```shell
-$ printf "2025 1 1\n2024 2 29\n" | ./weekday.py
- Wednesday
- Thursday
 ```
 
 ## 入力仕様
@@ -51,7 +41,12 @@ $ printf "2025 1 1\n2024 2 29\n" | ./weekday.py
 
 - 範囲外の日付    : `invalid date`  
 - フォーマット不正: error表示  
-- 入力なし        : Usage表示
+- 入力なし        : `invalid input`
+
+## テスト環境
+OS            : Ubuntu 24.04.3 LTS / Windows 11
+python-version: 3.7 ~ 3.12
+確認環境      : Ubuntu 24.04.3 LTS + GitHub Actions (CI)
 
 ## 著作権・ライセンス
 - このソフトウェアパッケージは、GNU General Public License v3.0（GPL-3.0-only）の下、再頒布および使用が許可されています。
