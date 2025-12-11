@@ -29,9 +29,8 @@ ret=$?
 
 ### EMPTY INPUT ###
 out=$(echo "" | ./weekday)
-ret=$?
-[ "$ret" = 1 ]       || ng "$LINENO"
-[ "$out" != "" ]     || ng "$LINENO"
+expected="invalid input"
+[ "$out" != "invalid input" ]     || ng "$LINENO"
 
 
 [ "$res" = 0 ] && echo "OK"
